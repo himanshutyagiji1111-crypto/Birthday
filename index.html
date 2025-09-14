@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <title>Happy Birthday!</title>
+  <link href="https://fonts.googleapis.com/css?family=Pacifico&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Pacifico', cursive;
+      min-height: 100vh;
+      background: linear-gradient(135deg, #f8e1f4 0%, #ffe6fa 100%);
+      overflow-x: hidden;
+    }
+    .hearts {
+      position: fixed;
+      width: 100vw;
+      height: 100vh;
+      z-index: 0;
+      overflow: hidden;
+      pointer-events: none;
+    }
+    .heart {
+      position: absolute;
+      width: 40px;
+      height: 40px;
+      background: url('https://cdn.jsdelivr.net/gh/fajarghifar/happybirthday/assets/heart.png') no-repeat center;
+      background-size: contain;
+      animation: float 7s infinite linear;
+      opacity: 0.7;
+    }
+    @keyframes float {
+      0% { transform: translateY(100vh) scale(1);}
+      100% { transform: translateY(-10vh) scale(1.2);}
+    }
+    .container {
+      position: relative;
+      z-index: 1;
+      width: 90vw;
+      max-width: 500px;
+      margin: 8vh auto;
+      background: rgba(255,255,255,0.8);
+      border-radius: 25px;
+      box-shadow: 0 6px 32px 0 rgba(125, 80, 175, 0.13);
+      text-align: center;
+      padding: 3em 2em 2em 2em;
+    }
+    h1 {
+      color: #e85d9e;
+      font-size: 2.5em;
+      margin-bottom: 0.2em;
+      font-family: 'Pacifico', cursive;
+    }
+    .wishes {
+      font-size: 1.3em;
+      color: #5a2955;
+      margin-bottom: 2em;
+    }
+    .cake-animation {
+      width: 120px;
+      margin: 0 auto 1em auto;
+      animation: bounce 2s infinite alternate;
+    }
+    @keyframes bounce {
+      0% { transform: translateY(0px);}
+      100% { transform: translateY(-14px);}
+    }
+    @media (max-width: 500px) {
+      .container { padding: 2em 1em; font-size: 1em;}
+      h1 { font-size: 2em;}
+    }
+  </style>
+</head>
+<body>
+  <div class="hearts">
+    <!-- Animated heart elements -->
+    <div class="heart" style="left:5vw; animation-delay:0s;"></div>
+    <div class="heart" style="left:30vw; animation-delay:0.8s;"></div>
+    <div class="heart" style="left:55vw; animation-delay:1.4s;"></div>
+    <div class="heart" style="left:80vw; animation-delay:2s;"></div>
+    <div class="heart" style="left:15vw; animation-delay:2.7s;"></div>
+    <div class="heart" style="left:40vw; animation-delay:3.2s;"></div>
+    <div class="heart" style="left:65vw; animation-delay:4s;"></div>
+    <div class="heart" style="left:88vw; animation-delay:4.8s;"></div>
+    <div class="heart" style="left:22vw; animation-delay:5.4s;"></div>
+    <div class="heart" style="left:49vw; animation-delay:6.1s;"></div>
+    <div class="heart" style="left:70vw; animation-delay:6.8s;"></div>
+    <div class="heart" style="left:92vw; animation-delay:7.3s;"></div>
+    <div class="heart" style="left:34vw; animation-delay:7.8s;"></div>
+    <div class="heart" style="left:74vw; animation-delay:8.3s;"></div>
+  </div>
+  <div class="container">
+    <img class="cake-animation" src="https://tse2.mm.bing.net/th/id/OIP.1QZrJBQOivr0Wa6USWHIRAHaFr?rs=1&pid=ImgDetMain&o=7&rm=3" alt="Birthday Cake"/>
+    <h1>Happy Birthday, Laiba!</h1>
+    <div class="wishes">
+      Wishing you a wonderful day filled with love, laughter, and unforgettable moments.<br>
+      May your life be as sweet as this cake and as bright as every heart in the sky.<br>
+      <span style="color:#ff6195;">With all my love, Himanshu 💖</span>
+    </div>
+  </div>
+</body>
+</html>
